@@ -1,0 +1,13 @@
+kas-kelas/
+├── .github/workflows/deploy.yml
+├── supabase/schema.sql
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── style.css
+│   └── supabase.js
+├── .env.example
+├── .gitignore
+├── index.html
+├── package.json
+└── vite.config.js
