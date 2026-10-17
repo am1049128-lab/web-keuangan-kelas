@@ -1,0 +1,29 @@
+:root{--paper:#F3F6F1;--card:#fff;--ink:#14302F;--rule:#C9D6CC;--ok:#1F7A4D;--warn:#9A5F0C;--bad:#B23A48;--head:'Young Serif',Georgia,serif;--body:'Instrument Sans',system-ui,sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--paper:#0F1B1B;--card:#162626;--ink:#E4EFEA;--rule:#2B4242;--ok:#59C48C;--warn:#E3A650;--bad:#F08A96;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;font:1rem/1.55 var(--body);color:var(--ink);background:var(--paper)}
+main{max-width:960px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:12px}
+h1{font:400 1.7rem var(--head);margin:0}
+h2{font:400 1.3rem var(--head);margin:28px 0 10px}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;padding:7px 14px;border:2px solid var(--ink);border-radius:6px;background:var(--card);font-weight:600}
+button:disabled{opacity:.5}
+button:focus-visible,input:focus-visible{outline:3px solid var(--ok);outline-offset:2px}
+input{padding:8px 10px;border:2px solid var(--ink);border-radius:6px;background:var(--card);min-width:0}
+nav{display:flex;gap:6px;margin:16px 0;flex-wrap:wrap}
+nav button[aria-current=page]{background:var(--ink);color:var(--paper)}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.err{padding:10px 14px;border-left:5px solid var(--bad);background:var(--card)}
+.balance{font:400 clamp(2.6rem,10vw,4.8rem)/1 var(--head);font-variant-numeric:tabular-nums;display:inline-block;padding-bottom:6px;border-bottom:5px double var(--ink);margin:8px 0 4px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:20px}
+.stats div{padding:12px 14px;background:var(--card);border-left:5px solid var(--ink)}
+.stats b{display:block;font:400 1.4rem var(--head);font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto;background:var(--card);border:1px solid var(--rule)}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{padding:9px 12px;border-bottom:1px solid var(--rule);text-align:left;white-space:nowrap}
+th{border-bottom:2px solid var(--ink)}
+td.n,th.n{text-align:right}
+.cell{min-width:44px;padding:3px 8px;border-width:1.5px}
+.Lunas{color:var(--ok);font-weight:600}.Kurang{color:var(--warn);font-weight:600}.Belum{color:var(--bad);font-weight:600}
+.muted{color:color-mix(in srgb,var(--ink) 65%,transparent)}
